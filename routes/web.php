@@ -14,9 +14,7 @@ use App\Http\Controllers\ArticleController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [ArticleController::class , 'toList']);
 
 Route::get('/article' , [ArticleController::class , 'toAdd']);
 Route::post('/article' , [ArticleController::class , 'add']);
