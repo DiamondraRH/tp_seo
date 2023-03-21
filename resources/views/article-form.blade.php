@@ -1,6 +1,6 @@
 @extends("layouts.master")
 @section("content")
-<script src="{{asset("assets/js/ckeditor.js")}}"></script>
+<script src="assets/js/ckeditor.js"></script>
 
 <div class="breadcrumb-wrapper">
     <div class="container">
