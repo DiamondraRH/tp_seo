@@ -5,18 +5,19 @@
     <!-- THEME CSS
 	================================================== -->
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css"/>>
+    <link rel="stylesheet" href="{{asset("assets/plugins/bootstrap/css/bootstrap.min.css")}}" >
     <!-- Themify -->
-    <link rel="stylesheet" href="assets/plugins/themify/css/themify-icons.css"/>
-    <link rel="stylesheet" href="assets/plugins/slick-carousel/slick-theme.css"/>
-    <link rel="stylesheet" href="assets/plugins/slick-carousel/slick.css"/>
+    <link rel="stylesheet" href="{{asset("assets/plugins/themify/css/themify-icons.css")}}" >
+    <link rel="stylesheet" href="{{asset("assets/plugins/slick-carousel/slick-theme.css")}}" >
+    <link rel="stylesheet" href="{{asset("assets/plugins/slick-carousel/slick.css")}}" >
     <!-- Slick Carousel -->
-    <link rel="stylesheet" href="assets/plugins/owl-carousel/owl.carousel.min.css"/>
-    <link rel="stylesheet" href="assets/plugins/owl-carousel/owl.theme.default.min.css"/>
-    <link rel="stylesheet" href="assets/plugins/magnific-popup/magnific-popup.css"/>
+    <link rel="stylesheet" href="{{asset("assets/plugins/owl-carousel/owl.carousel.min.css")}}" >
+    <link rel="stylesheet" href="{{asset("assets/plugins/owl-carousel/owl.theme.default.min.css")}}" >
+    <link rel="stylesheet" href="{{asset("assets/plugins/magnific-popup/magnific-popup.css")}}" >
     <!-- manin stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="{{asset("assets/css/style.css")}}" >
     <meta name="csrf-token" content="{{ csrf_token() }}" />
+    <meta name="description" content=@yield('metadata')/>
 </head>
 <body>
     <header class="header-top bg-grey justify-content-center">
