@@ -1,6 +1,6 @@
 @extends("layouts.master")
 @section("title") {{ "- ".$article->titre}} @endsection
-@section("metadata") {{ $artice->titre." ".$article->resume}}
+@section("metadata") {{ $article->titre." ".$article->resume}}
 @section("content")
 <section class="single-block-wrapper section-padding">
     <div class="container">
