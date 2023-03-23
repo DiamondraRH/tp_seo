@@ -1,4 +1,5 @@
 @extends("layouts.master")
+@section("metadata") "formulaire pour ajouter un nouvel article"@endsection
 @section("content")
 <script src="../assets/js/ckeditor.js"></script>
 
@@ -25,26 +26,26 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label>Titre</label>
+                                        <label for="titre">Titre</label>
                                         <input class="form-control form-control-name" name="titre"
-                                               type="text" required>
+                                               type="text" id="titre" required>
                                     </div>
 
                                     <div class="form-group">
-                                        <label>Resume</label>
+                                        <label for="resume">Resume</label>
                                         <textarea class="form-control form-control-message" name="resume"
-                                                   rows="7" required></textarea>
+                                                   rows="7" id="resume" required></textarea>
                                     </div>
 
                                     <div class="form-group">
-                                        <label>Contenu</label>
-                                        <textarea name="contenu" id="editor" rows="10" cols="80">
+                                        <label for="contenu">Contenu</label>
+                                        <textarea name="contenu" id="contenu" rows="10" cols="80">
                                         </textarea>
                                     </div>
 
                                     <div class="form-group">
-                                        <label>Categorie</label>
-                                        <select class="form-control dropdown" name="id_categorie">
+                                        <label for="categorie">Categorie</label>
+                                        <select class="form-control dropdown" name="id_categorie" id="categorie">
                                             <?php foreach ($categories as $categorie) { ?>
                                                 <option  class="dropdown-item" value="{{$categorie->id_categorie}}">{{$categorie->libelle}}</option>
                                             <?php } ?>

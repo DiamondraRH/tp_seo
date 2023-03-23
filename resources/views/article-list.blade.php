@@ -1,4 +1,5 @@
 @extends("layouts.master")
+@section("metadata") "liste des articles"@endsection
 @section("content")
     <div class="breadcrumb-wrapper">
         <div class="container">
