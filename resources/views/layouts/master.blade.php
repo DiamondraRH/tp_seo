@@ -17,7 +17,7 @@
     <!-- manin stylesheet -->
     <link rel="stylesheet" href="../assets/css/style.css" >
     <meta name="csrf-token" content="{{ csrf_token() }}" />
-    <meta name="description" content=@yield('metadata')/>
+    <meta name="description" content="@yield('metadata')"/>
 </head>
 <body>
     <header class="header-top bg-grey justify-content-center">
