@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ArticleController;
+use App\Http\Middleware\GzipMiddleware;
 
 /*
 |--------------------------------------------------------------------------
