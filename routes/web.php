@@ -14,11 +14,11 @@ use App\Http\Controllers\ArticleController;
 |
 */
 
-Route::get('/', [ArticleController::class , 'toList']);
-
-Route::get('/article' , [ArticleController::class , 'toAdd']);
-Route::post('/article' , [ArticleController::class , 'add']);
-
-Route::get('/articles' , [ArticleController::class , 'toList']);
-
-Route::get('/article/{slug}' , [ArticleController::class , 'detail']);
+Route::middleware(['gzip'])->group(function () {
+    // Your routes here
+    Route::get('/', [ArticleController::class , 'toList']);
+    Route::get('/article' , [ArticleController::class , 'toAdd']);
+    Route::post('/article' , [ArticleController::class , 'add']);
+    Route::get('/articles' , [ArticleController::class , 'toList']);
+    Route::get('/article/{slug}' , [ArticleController::class , 'detail']);
+  });
