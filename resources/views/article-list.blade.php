@@ -6,7 +6,6 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="text-center">
-                        <h2 class="lg-title">Articles</h2>
                     </div>
                 </div>
             </div>
