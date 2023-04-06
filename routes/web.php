@@ -21,5 +21,9 @@ Route::middleware(['gzip'])->group(function () {
     Route::get('/article' , [ArticleController::class , 'toAdd']);
     Route::post('/article' , [ArticleController::class , 'add']);
     Route::get('/articles' , [ArticleController::class , 'toList']);
-    Route::get('/article/{slug}' , [ArticleController::class , 'detail'])->middleware('cache:5');
+    Route::get('/article/{slug}' , function()  {
+        return Cache::remember('fiche', 5, function () {
+            [ArticleController::class , 'detail'];
+        });
+    });
   });
