@@ -9,7 +9,7 @@
 Author       : Revolve
 Template Name: Minimal Blog Template
 Author URI : https://themefisher.com/
-Description: Revolve,blog,minimal,multipage,contact 
+Description: Revolve,blog,minimal,multipage,contact
 Version      : 1.0
 */
 /*------------------------------------------------------------------
@@ -61,7 +61,7 @@ Version      : 1.0
   8.3. Sidebar Nav
   8.4. Newsletter
   8.5. Tags
-  8.6. Review Post 
+  8.6. Review Post
   8.7. Top Authors
 
 9. VIDEO GALLERY
@@ -107,7 +107,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  color: #1c1c1c;
+  color: #ff0000;
   font-weight: 600;
   font-family: "Unna", serif;
 }
